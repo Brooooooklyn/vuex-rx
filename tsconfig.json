@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "newLine": "LF",
+    "noEmitHelpers": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "outDir": "dist",
+    "lib": [
+      "es5",
+      "es2015",
+      "es2015.core",
+      "es2015.promise",
+      "dom",
+      "dom.iterable"
+    ]
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

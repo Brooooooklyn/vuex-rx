@@ -1,0 +1,56 @@
+{
+  "name": "vuex-observable",
+  "version": "0.0.1",
+  "description": "RxJS middleware for vuex",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "npm-run-all tsc tsc:test",
+    "check:cycle": "madge dist/index.js --circular",
+    "cover": "rm -rf ./.nyc_output ./coverage && nyc --reporter=html --reporter=lcov --exclude=node_modules --exclude=spec-js tman --mocha spec-js/**/*.js",
+    "lint": "tslint `find src -type f -name '*.ts'`",
+    "test": "tman spec-js/**/*.js --mocha",
+    "tsc": "rm -rf dist && tsc -p --diagnostics --pretty src/tsconfig.json",
+    "tsc:test": "rm -rf spec-js && tsc --diagnostics --pretty -p test/tsconfig.json",
+    "watch:src": "rm -rf dist && tsc -p src/tsconfig.json -w",
+    "watch:test": "rm -rf spec-js && tsc -p test/tsconfig.json -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Brooooooklyn/vuex-observable.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "RxJS",
+    "TypeScript",
+    "redux"
+  ],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/sinon": "^2.2.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.13.1",
+    "madge": "^1.6.0",
+    "npm-run-all": "^4.0.2",
+    "nyc": "^10.3.2",
+    "rxjs": "^5.4.0",
+    "sinon": "^2.2.0",
+    "tman": "^1.6.7",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.2.0",
+    "tslint-eslint-rules": "^4.0.0",
+    "typescript": "^2.3.2",
+    "vue": "^2.3.3",
+    "vuex": "^2.3.1"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.2.0",
+    "vuex": "^2.3.1"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}

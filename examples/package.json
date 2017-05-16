@@ -1,0 +1,30 @@
+{
+  "name": "vuex-observable-example",
+  "version": "0.0.1",
+  "description": "Example app for vuex-observable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vuex",
+    "vuex-observable",
+    "RxJS"
+  ],
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "vue-loader": "^12.0.4",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "rxjs": "^5.4.0",
+    "vue": "^2.3.3",
+    "vue-router": "^2.5.3",
+    "vuex": "^2.3.1",
+    "vuex-router-sync": "^4.1.2"
+  }
+}
