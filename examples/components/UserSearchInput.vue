@@ -2,7 +2,7 @@
   <input
     type='text'
     placeholder='Search for a GH user'
-    defaultValue={{ defaultValue }}
+    defaultValue="defaultValue"
     v-on:keyup="onChange"
   />
 </template>

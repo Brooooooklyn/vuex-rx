@@ -8,6 +8,6 @@ const Admin = {
   }
 }
 
-export default connect((globalState) => globalState.admin, {
+export default connect((globalState) => globalState.ui.admin, {
   checkAdminAccess
 })(Admin, store)

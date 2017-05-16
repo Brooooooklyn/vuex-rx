@@ -6,6 +6,7 @@
 
   More info: https://github.com/ReactiveX/rxjs#installation-and-usage
  */
+import './RxOperator'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { sync } from 'vuex-router-sync'

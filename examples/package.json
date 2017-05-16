@@ -4,6 +4,7 @@
   "description": "Example app for vuex-observable",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "rxjs": "^5.4.0",
+    "tslib": "^1.7.1",
     "vue": "^2.3.3",
     "vue-router": "^2.5.3",
     "vuex": "^2.3.1",

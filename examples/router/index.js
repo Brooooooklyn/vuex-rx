@@ -1,15 +1,21 @@
 import { RouteConfig } from 'vue-router'
-import AdminComponent from '../container/admin'
+import AdminComponent from '../containers/admin'
+import SearchComponent from '../containers/search'
 
-const routeConfig: RouteConfig[] = [
+const routeConfig = [
   {
     path: '/admin',
-    component: ,
+    component: AdminComponent,
     name: 'admin'
   },
   {
+    path: '/search',
+    component: SearchComponent,
+    name: 'search'
+  },
+  {
     path: '*',
-    redirect: '/admin'
+    redirect: '/search'
   }
 ]
 
