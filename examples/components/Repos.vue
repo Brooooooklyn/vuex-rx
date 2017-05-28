@@ -1,15 +1,15 @@
 <template>
   <ul v-if="repos.length">
-    <li v-for="repo in repos" v-bind:key="repo.id">
+    <li v-for="repo in repos" :key="repo.id">
       <a
-        href={{ repo.html_url }}
+        :href="repo.html_url"
         target='__blank'
       >
         {{ repo.full_name }}
       </a>
-    <li>
+    </li>
   </ul>
-  <p v-if="!repos.length">{{ user }} has no repos</p>
+  <p v-else>{{ user }} has no repos</p>
 </template>
 <script>
 export default {

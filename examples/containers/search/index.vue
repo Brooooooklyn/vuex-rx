@@ -3,13 +3,13 @@
     <router-link to="/admin" style="display: 'block'; marginBottom: 10">
       Admin Panel
     </router-link>
-    <user-search-nput
-      v-bind:default-value="query"
-      v-bind:on-change="handleUserSearch"
+    <user-search-input
+      :default-value="query"
+      :on-change="search"
     />
     <user-search-results
-      v-bind:results="results"
-      v-bind:loading="searchInFlight"
+      :results="results"
+      :loading="searchInFlight"
     />
   </div>
 </template>

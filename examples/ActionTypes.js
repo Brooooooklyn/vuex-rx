@@ -1,4 +1,4 @@
-import { createAction } from '../../dist'
+import { createAction } from 'vuex-rx'
 
 export const SEARCHED_USERS = createAction('SEARCHED_USERS')
 export const RECEIVED_USERS = createAction('RECEIVED_USERS')

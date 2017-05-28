@@ -1,6 +1,6 @@
-import { RouteConfig } from 'vue-router'
 import AdminComponent from '../containers/admin'
 import SearchComponent from '../containers/search'
+import ReposComponent from '../containers/repos'
 
 const routeConfig = [
   {
@@ -12,6 +12,11 @@ const routeConfig = [
     path: '/search',
     component: SearchComponent,
     name: 'search'
+  },
+  {
+    path: '/repos/:user',
+    component: ReposComponent,
+    name: 'user-repos'
   },
   {
     path: '*',

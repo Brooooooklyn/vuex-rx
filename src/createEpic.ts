@@ -5,6 +5,8 @@ import { Subject } from 'rxjs/Subject'
 import { Store } from 'vuex'
 import Vue from 'vue'
 
+import { actionMutations } from './reduxLike'
+
 import { ActionsObservable } from './ActionObservable'
 import { EPIC_END } from './EPIC_END'
 
@@ -25,6 +27,7 @@ export interface CreateEpicMiddlewareOptions<T, S> {
 }
 
 export function createEpicMiddleware <T, S> (store: Store<S>) {
+  actionMutations.store = store
   return (_: typeof Vue, options: CreateEpicMiddlewareOptions<T, S>) => {
     options = { ...defaultOptions, ...options }
     const epic = options.epic

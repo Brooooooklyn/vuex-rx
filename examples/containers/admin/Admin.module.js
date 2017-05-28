@@ -1,16 +1,17 @@
-import { push } from 'vue-router'
 import { Observable } from 'rxjs/Observable'
-import { createAction, handleActions, combineEpics } from 'vuex-observable'
+import { createAction, handleActions, combineEpics } from 'vuex-rx'
 
 export const checkAdminAccess = createAction('CHECKED_ADMIN_ACCESS')
 const accessDenied = createAction('ACCESS_DENIED')
 
 // reducer
 export const reducer = handleActions({
-  [`${accessDenied}`]: (state, { payload }) => {
+  [`${accessDenied}`]: (state, payload) => {
     return { ...state, adminAccess: payload }
   }
-}, {})
+}, {
+  adminAccess: null
+})
 
 // epics
 
@@ -22,7 +23,7 @@ const adminAccess = action$ => action$
   .mergeMap(() => Observable.merge(
     Observable.of(accessDenied()),
     Observable.timer(2000)
-      .map(() => push('/'))
+      .map(() => location.href = '/')
   ))
 
 // or you can just

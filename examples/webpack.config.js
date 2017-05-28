@@ -17,9 +17,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'ts-loader',
+        loader: 'babel-loader',
         options: {
-          transpileOnly: true
+          presets: [ ['env', { module: false }] ],
+          plugins: [require('babel-plugin-transform-object-rest-spread')]
         }
       }
     ]
@@ -30,7 +31,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      'vuex-observable': path.join(__dirname, '..', 'dist'),
       'vue$': 'vue/dist/vue.esm.js'
     },
     modules: [path.resolve(process.cwd(), 'node_modules')]

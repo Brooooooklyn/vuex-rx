@@ -1,4 +1,6 @@
+## example for vue-rx
+
 ```
-npm install
-npm run serve
+yarn
+yarn dev
 ```

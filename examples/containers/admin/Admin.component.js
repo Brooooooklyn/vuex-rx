@@ -1,4 +1,4 @@
-import { connect } from 'vuex-observable'
+import { connect } from 'vuex-rx'
 import { checkAdminAccess } from './Admin.module'
 import store from '../../store'
 
