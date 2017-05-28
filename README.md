@@ -1,8 +1,8 @@
-[![CircleCI](https://circleci.com/gh/Brooooooklyn/vuex-observable/tree/master.svg?style=svg)](https://circleci.com/gh/Brooooooklyn/vuex-observable/tree/master)
-[![Coverage Status](https://coveralls.io/repos/github/Brooooooklyn/vuex-observable/badge.svg?branch=master)](https://coveralls.io/github/Brooooooklyn/vuex-observable?branch=master)
-[![Dependency Status](https://david-dm.org/Brooooooklyn/vuex-observable.svg)](https://david-dm.org/Brooooooklyn/vuex-observable)
-[![devDependencies Status](https://david-dm.org/Brooooooklyn/vuex-observable/dev-status.svg)](https://david-dm.org/Brooooooklyn/vuex-observable?type=dev)
-# Vuex-Observable [WIP]
+[![CircleCI](https://circleci.com/gh/Brooooooklyn/vuex-rx.svg?style=svg)](https://circleci.com/gh/Brooooooklyn/vuex-rx)
+[![Coverage Status](https://coveralls.io/repos/github/Brooooooklyn/vuex-rx/badge.svg?branch=master)](https://coveralls.io/github/Brooooooklyn/vuex-rx?branch=master)
+[![Dependency Status](https://david-dm.org/Brooooooklyn/vuex-rx.svg)](https://david-dm.org/Brooooooklyn/vuex-rx)
+[![devDependencies Status](https://david-dm.org/Brooooooklyn/vuex-rx/dev-status.svg)](https://david-dm.org/Brooooooklyn/vuex-rx?type=dev)
+# Vuex-Rx [WIP]
 Use Vuex + Vue + RxJS like React + Redux + React-redux + Redux-actons + redux-observable.
 
 ## Boilerplate
