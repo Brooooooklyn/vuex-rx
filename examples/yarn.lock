@@ -3600,9 +3600,9 @@ vuex-router-sync@^4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/vuex-router-sync/-/vuex-router-sync-4.1.3.tgz#f209ec3174de04179bfadd7994437e4c5a81c975"
 
-vuex-rx@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/vuex-rx/-/vuex-rx-0.0.1.tgz#253e490d6ba6d5aaec462246874c81c54436add4"
+vuex-rx@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vuex-rx/-/vuex-rx-0.0.2.tgz#cc8bf00f3d150a059032c3d480a9068e343f164f"
   dependencies:
     tslib "^1.7.1"
 
