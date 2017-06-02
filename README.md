@@ -3,6 +3,8 @@
 [![Dependency Status](https://david-dm.org/Brooooooklyn/vuex-rx.svg)](https://david-dm.org/Brooooooklyn/vuex-rx)
 [![devDependencies Status](https://david-dm.org/Brooooooklyn/vuex-rx/dev-status.svg)](https://david-dm.org/Brooooooklyn/vuex-rx?type=dev)
 # Vuex-Rx [WIP]
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Brooooooklyn/vuex-rx.svg)](https://greenkeeper.io/)
 Use Vuex + Vue + RxJS like React + Redux + React-redux + Redux-actons + redux-observable.
 
 ## Boilerplate
